@@ -1,3 +1,4 @@
 services/
 vars.mk
 build/
+publish_password.txt
