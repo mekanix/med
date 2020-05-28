@@ -17,6 +17,7 @@ else
   ${PROJECT_ROOT}/services/frontend/bin/build.sh
 fi
 
-rm -rf ${PROJECT_ROOT}/build/*
-cp -r "${PROJECT_ROOT}/services/backend/${backend_app_name}/static" "${PROJECT_ROOT}/build/"
+rm -rf ${PROJECT_ROOT}/build
+mkdir ${PROJECT_ROOT}/build
+cp -r "${PROJECT_ROOT}/services/backend/static" "${PROJECT_ROOT}/build/"
 cp -r ${PROJECT_ROOT}/services/frontend/build/* "${PROJECT_ROOT}/build/"

@@ -9,4 +9,3 @@ publish: build_lib
 	@bin/publish.sh
 
 .include <${REGGAE_PATH}/mk/project.mk>
-
