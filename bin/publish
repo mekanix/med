@@ -5,7 +5,7 @@ set PASSWORD [lindex $argv 0]
 
 
 set timeout -1
-spawn ssh -t med.meka.rs sudo cbsd jexec jname=medback supervisorctl restart med
+spawn ssh -t med.meka.rs sudo cbsd jexec jname=med supervisorctl restart med
 expect "Password:"
 send -- "$PASSWORD\r"
 expect eof
