@@ -1,4 +1,7 @@
+build/*
+!build/.keep
 services/
 vars.mk
-build/
-publish_password.txt
+*.vagrant/
+*.retry
+*.log
